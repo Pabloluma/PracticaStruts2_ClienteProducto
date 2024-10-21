@@ -1,0 +1,72 @@
+.table {
+	width: 100%;
+	border-collapse: collapse; /* Elimina el espacio entre las celdas */
+	margin: 20px 0;
+	font-size: 16px;
+	text-align: left;
+}
+
+.table th, .table td {
+	padding: 12px 15px; /* Espaciado interno en las celdas */
+	border: 1px solid #dddddd; /* Bordes de las celdas */
+}
+
+.table th {
+	background-color: #4CAF50; /* Color de fondo para el encabezado */
+	color: white; /* Color del texto */
+}
+
+.table tr:nth-child(even) {
+	background-color: #f2f2f2; /* Color de fondo para filas pares */
+}
+
+/* Eliminar el efecto hover de toda la fila */
+.table tr:hover {
+	background-color: transparent;
+	/* No hay color de fondo al pasar el ratón */
+}
+
+.modificar {
+	background-color: transparent;
+	/* Color de fondo predeterminado para la celda "Modificar" */
+	transition: background-color 0.3s;
+	/* Transición suave para el cambio de color */
+}
+
+.modificar:hover {
+	background-color: #333;
+	/* Color oscuro de fondo al pasar el ratón sobre la celda "Modificar" */
+	color: white;
+	/* Cambiar color del texto a blanco para mejor contraste */
+}
+
+.table caption {
+	margin: 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.table img {
+	width: 10px; /* Tamaño de la imagen */
+}
+.boton_volver{
+	background-color: #2ecc71;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 50%;
+    margin:auto;
+/*     margin-top: 20px; */
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+
+.boton_volver:hover{
+	 background-color: #27ae60;
+	
+}

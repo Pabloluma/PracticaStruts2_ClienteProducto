@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN" 
+"http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+		<action name="acceder" class="action.PedidoAction"
+			method="execute">
+			<result name="success">/ok.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="cargarClientes" class="action.ClienteAction"
+			method="cargarClientes">
+			<result name="success">/mostrar.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="editarCliente" class="action.EditarAction"
+			method="editarCliente">
+			<result name="success">/editarCliente.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+			<action name="actualiza" class="action.ActualizarAction"
+			method="actualizarTodo">
+			<result name="success">/Ok_cliente.jsp</result>
+<!-- 			<result name="success">/mostrar.jsp</result> -->
+			<result name="error">/error.jsp</result>
+		</action>
+	</package>
+</struts>
